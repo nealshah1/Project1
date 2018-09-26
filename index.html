@@ -6,14 +6,31 @@
     <link rel="stylesheet" href="Css/Screen.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Lab 2</title>
+    <title>Project 1</title>
   </head>
   <body>
-    <h1>Form</h1>
-      <form action="/action_page.php" method="get">
+    <h1>This is a Vacation Subscription page, Please sign up</h1>
+      <form action="#" method="post">
+
+        <div class= "field">
+          <label>  First Name:</label>
+          <input type="text" name="FirstName" placeholder= "John"><br>
+        </div>
+
+        <div class= "field">
+          <label>  Last Name:</label>
+          <input type="text" name="LastName" placeholder= "Doe"><br>
+        </div>
+
+
           <div class= "field">
             <label>  Email Address:</label>
             <input type="email" name="Email" placeholder= "123@address.com"><br>
+          </div>
+
+          <div class= "field">
+            <label>  Password:</label>
+            <input type="password" name="Pwd" placeholder= "****"><br>
           </div>
 
           <div class= "field">
@@ -21,12 +38,17 @@
             <input type="number" name="Pnumber" placeholder="(000)-000-000"><br>
           </div>
 
+
           <div class= "field">
             <label>Date of Birth: </label>
             <input type="date" name="DOB"><br>
           </div>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="AlertScreen()">
       </form>
       <p>NEAL SHAH</p>
+
+      <script type="text/javascript" src="JS/Validator.js">
+
+      </script>
   </body>
 </html>
