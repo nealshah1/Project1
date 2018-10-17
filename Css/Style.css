@@ -11,14 +11,22 @@ Project 1 CSS Page */
 /* Starting my personal Code */
 
 h1 {
-  color: orange;
+  color: purple;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 10px;
+  font-family: 'Oxygen', sans-serif;
   padding-bottom: 25px;
 }
-form{
+h2{
+  color: purple;
   text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
+form{
+  text-align: left;
+  margin-left: 160px;
 }
 
 .field{
@@ -28,7 +36,7 @@ form{
 
 body{
 
-  background-image: url("../IMG/Background1.jpg");
+  background-image: url("../IMG/background2.jpg");
 
 }
 
@@ -36,24 +44,60 @@ p{
   text-align: center;
   padding-top: 40px;
   font-size: 40px;
-  color: red;
+  color: purple;
 
 }
+label{
+  color: purple;
+  font-size: 20px;
+}
 
+.rapper{
+  background-color: turquoise;
+  margin: 10% 25%;
+  border-radius: 25px;
+  padding: 2%;
+}
+input{
+  height: 20px;
+  font-size: 15px;
+  text-align: left;
+  float: right;
+  margin-right: 100px;
+}
 
+#submitBtn{
+  margin-right: 52%;
+}
 
 /*Display 3 per row for medium displays (like mobile phones in landscape or smaller tablets)*/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
   h1{
     font-size: 20px !important;
 
   }
-
+  input{
+    text-align: center;
+    float: none;
+    margin: 0;
+  }
+  form{
+    text-align: center;
+    margin: 0;
+  }
+  .rapper{
+    margin: 15% 0;
+    border-radius: 0px;
+  }
+  #submitBtn{
+    background-color: white;
+    margin-left: 50%;
+  }
 }
 /*Display 6 to a row for large displays (like medium tablets and up) */
 @media screen and (min-width: 768px) {
   h1{
-    font-size: 30px !important;
+    font-size: 27px !important;
     margin: 10px;
   }
 }
