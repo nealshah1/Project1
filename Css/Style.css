@@ -80,7 +80,9 @@ input{
   input{
     text-align: center;
     float: none;
-    margin: 0;
+    margin-left: 25%;
+    display: inline-block;
+
   }
   form{
     text-align: center;
@@ -93,6 +95,12 @@ input{
   #submitBtn{
     background-color: white;
     margin-left: 50%;
+  }
+  label{
+    float: none;
+    display: inline-block;
+    margin-right: 2%;
+
   }
 }
 /*Display 6 to a row for large displays (like medium tablets and up) */
